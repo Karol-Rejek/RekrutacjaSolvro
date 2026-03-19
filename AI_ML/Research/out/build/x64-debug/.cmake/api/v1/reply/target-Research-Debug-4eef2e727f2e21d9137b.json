@@ -1,0 +1,440 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Research.exe"
+		},
+		{
+			"path" : "Research.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"add_custom_command",
+			"target_include_directories",
+			"set_property"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Caffe2/Caffe2Config.cmake",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Torch/TorchConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 68,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 121,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 112,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 92,
+				"parent" : 9
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "torch::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "torch_library::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "CUDA::cudart::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "CUDA::cuda_driver::@6890427a1f51a3e7e1df"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/permissive-"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/Z7"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/bigobj"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "USE_C10D_GLOO"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "USE_DISTRIBUTED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"isSystem" : true,
+					"path" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/include"
+				},
+				{
+					"backtrace" : 13,
+					"isSystem" : true,
+					"path" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/include/torch/csrc/api/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					14
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5
+			]
+		}
+	],
+	"id" : "Research::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -MDd -Zi",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:\\lib\\intel64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:\\lib\\intel64_win",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:\\lib\\win-x64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\kineto.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\caffe2_nvrtc.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\c10_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64\\cudart.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64\\cuda.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\torch.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\torch_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\torch_cpu.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-INCLUDE:?warp_size@cuda@at@@YAHXZ",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\c10_cuda.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\Projekty\\!Requrements\\libtorch-win-shared-with-deps-debug-2.10.0+cu130\\libtorch\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64\\cudart.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "torch::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "torch_library::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/lib/c10.lib"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/lib/kineto.lib"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/lib/caffe2_nvrtc.lib"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/lib/c10_cuda.lib"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "CUDA::cudart::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "CUDA::cuda_driver::@6890427a1f51a3e7e1df"
+		}
+	],
+	"name" : "Research",
+	"nameOnDisk" : "Research.exe",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 12,
+			"id" : "Research::@6890427a1f51a3e7e1df"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Research.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Research.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/data/ImageDataset.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/data/ImageDataset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/models/ModelLoader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/models/ModelLoader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/training/Trainer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/data/ImageDatasetConfig.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

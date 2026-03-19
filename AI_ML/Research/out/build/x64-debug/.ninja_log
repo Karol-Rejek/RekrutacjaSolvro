@@ -1,0 +1,7 @@
+# ninja log v6
+56	9306	7952889904328922	CMakeFiles/Research.dir/Research.cpp.obj	3447065bc06169c7
+9307	13959	7952889996841225	Research.exe	5e379fcd7e3b6948
+67	103	7953069334427439	CMakeFiles/Research.dir/src/models/ModelLoader.cpp.obj	a0fe8146774594c0
+55	8948	7953069334308432	CMakeFiles/Research.dir/Research.cpp.obj	3447065bc06169c7
+57	8954	7953069702209586	CMakeFiles/Research.dir/src/data/ImageDataset.cpp.obj	5cc90bab4e1fc327
+8956	13304	7953069791199334	Research.exe	fc3e361c609a3d47

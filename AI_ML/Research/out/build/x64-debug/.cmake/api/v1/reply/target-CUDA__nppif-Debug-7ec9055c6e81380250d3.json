@@ -1,0 +1,117 @@
+{
+	"abstract" : true,
+	"backtrace" : 10,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_CUDAToolkit_find_and_add_import_lib",
+			"find_package",
+			"include",
+			"set_property"
+		],
+		"files" : 
+		[
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Caffe2/public/cuda.cmake",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Caffe2/Caffe2Config.cmake",
+			"D:/Projekty/!Requrements/libtorch-win-shared-with-deps-debug-2.10.0+cu130/libtorch/share/cmake/Torch/TorchConfig.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 68,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 86,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 6
+			},
+			{
+				"file" : 0,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1023,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 893,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 910,
+				"parent" : 9
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "CUDA::nppif::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "CUDA::nppc::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "CUDA::nppc::@6890427a1f51a3e7e1df"
+		}
+	],
+	"local" : true,
+	"name" : "CUDA::nppif",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UNKNOWN_LIBRARY"
+}
