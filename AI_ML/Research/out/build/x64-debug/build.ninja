@@ -82,6 +82,39 @@ build CMakeFiles\Research.dir\src\models\ModelLoader.cpp.obj: CXX_COMPILER__Rese
   TARGET_PDB = Research.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\Research.dir
 
+build CMakeFiles\Research.dir\src\training\Trainer.cpp.obj: CXX_COMPILER__Research_unscanned_Debug D$:\Projekty\RekrutacjaSolvro\AI_ML\Research\src\training\Trainer.cpp || cmake_object_order_depends_target_Research
+  CONFIG = Debug
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /permissive- /Z7 /EHsc /bigobj
+  INCLUDES = -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include\torch\csrc\api\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\include" -external:W0
+  OBJECT_DIR = CMakeFiles\Research.dir
+  OBJECT_FILE_DIR = CMakeFiles\Research.dir\src\training
+  TARGET_COMPILE_PDB = CMakeFiles\Research.dir\
+  TARGET_PDB = Research.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Research.dir
+
+build CMakeFiles\Research.dir\src\training\metrics.cpp.obj: CXX_COMPILER__Research_unscanned_Debug D$:\Projekty\RekrutacjaSolvro\AI_ML\Research\src\training\metrics.cpp || cmake_object_order_depends_target_Research
+  CONFIG = Debug
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /permissive- /Z7 /EHsc /bigobj
+  INCLUDES = -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include\torch\csrc\api\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\include" -external:W0
+  OBJECT_DIR = CMakeFiles\Research.dir
+  OBJECT_FILE_DIR = CMakeFiles\Research.dir\src\training
+  TARGET_COMPILE_PDB = CMakeFiles\Research.dir\
+  TARGET_PDB = Research.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Research.dir
+
+build CMakeFiles\Research.dir\src\models\Classifier.cpp.obj: CXX_COMPILER__Research_unscanned_Debug D$:\Projekty\RekrutacjaSolvro\AI_ML\Research\src\models\Classifier.cpp || cmake_object_order_depends_target_Research
+  CONFIG = Debug
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /permissive- /Z7 /EHsc /bigobj
+  INCLUDES = -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include -external:ID:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\include\torch\csrc\api\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\include" -external:W0
+  OBJECT_DIR = CMakeFiles\Research.dir
+  OBJECT_FILE_DIR = CMakeFiles\Research.dir\src\models
+  TARGET_COMPILE_PDB = CMakeFiles\Research.dir\
+  TARGET_PDB = Research.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\Research.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Research
@@ -90,7 +123,7 @@ build CMakeFiles\Research.dir\src\models\ModelLoader.cpp.obj: CXX_COMPILER__Rese
 #############################################
 # Link the executable Research.exe
 
-build Research.exe: CXX_EXECUTABLE_LINKER__Research_Debug CMakeFiles\Research.dir\Research.cpp.obj CMakeFiles\Research.dir\src\data\ImageDataset.cpp.obj CMakeFiles\Research.dir\src\models\ModelLoader.cpp.obj | D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\kineto.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\caffe2_nvrtc.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10_cuda.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch_cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch_cpu.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10_cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cudart.lib
+build Research.exe: CXX_EXECUTABLE_LINKER__Research_Debug CMakeFiles\Research.dir\Research.cpp.obj CMakeFiles\Research.dir\src\data\ImageDataset.cpp.obj CMakeFiles\Research.dir\src\models\ModelLoader.cpp.obj CMakeFiles\Research.dir\src\training\Trainer.cpp.obj CMakeFiles\Research.dir\src\training\metrics.cpp.obj CMakeFiles\Research.dir\src\models\Classifier.cpp.obj | D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\kineto.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\caffe2_nvrtc.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10_cuda.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch_cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\torch_cpu.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10_cuda.lib D$:\Projekty\!Requrements\libtorch-win-shared-with-deps-debug-2.10.0+cu130\libtorch\lib\c10.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v13.2\lib\x64\cudart.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
@@ -104,6 +137,7 @@ build Research.exe: CXX_EXECUTABLE_LINKER__Research_Debug CMakeFiles\Research.di
   TARGET_IMPLIB = Research.lib
   TARGET_PDB = Research.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\Research.dir
+  RSP_FILE = CMakeFiles\Research.rsp
 
 
 #############################################

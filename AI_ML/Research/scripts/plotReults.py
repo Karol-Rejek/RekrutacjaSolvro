@@ -12,7 +12,6 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 MODES = ["frozen", "full_finetune"]
 LABELS = {"frozen": "Frozen backbone", "full_finetune": "Full fine-tuning"}
 
-# ── 1. Krzywe strat ──────────────────────────────────────────────────
 fig, axes = plt.subplots(1, 2, figsize=(12, 4))
 for i, mode in enumerate(MODES):
     hist_path = CHECKPOINTS / f"history_{mode}.json"
@@ -28,7 +27,6 @@ plt.tight_layout()
 plt.savefig(OUTPUT_DIR / "loss_curves.png", dpi=150)
 plt.close()
 
-# ── 2. Porównanie metryk bar chart ───────────────────────────────────
 metric_names = ["accuracy", "precision", "recall", "f1_score", "roc_auc"]
 data = {mode: {} for mode in MODES}
 for mode in MODES:

@@ -356,6 +356,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-Debug-ebabeef1d314beb9f316.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "torch::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-torch-Debug-22c04f28dc07dd7dc178.json",
 					"name" : "torch",
@@ -465,7 +472,8 @@
 						53,
 						54,
 						55,
-						56
+						56,
+						57
 					],
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
@@ -543,7 +551,8 @@
 						53,
 						54,
 						55,
-						56
+						56,
+						57
 					],
 					"directoryIndexes" : 
 					[
@@ -561,7 +570,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Research::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Research-Debug-4eef2e727f2e21d9137b.json",
+					"jsonFile" : "target-Research-Debug-99a870ba80da86cc5f84.json",
 					"name" : "Research",
 					"projectIndex" : 0
 				}

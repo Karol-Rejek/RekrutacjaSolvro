@@ -22,8 +22,11 @@ endif()
 find_package(Torch REQUIRED)
 find_package(CUDAToolkit)
 
+add_library(nlohmann_json INTERFACE)
+target_include_directories(nlohmann_json INTERFACE ${CMAKE_SOURCE_DIR}/vendor)
+
 # Dodaj źródło do pliku wykonywalnego tego projektu
-add_executable (Research "Research.cpp" "Research.h" "src/data/ImageDataset.h" "src/data/ImageDataset.cpp" "src/models/ModelLoader.h" "src/models/ModelLoader.cpp" "src/training/Trainer.h" "src/data/ImageDatasetConfig.h")
+add_executable (Research "Research.cpp" "Research.h" "src/data/ImageDataset.h" "src/data/ImageDataset.cpp" "src/models/ModelLoader.h" "src/models/ModelLoader.cpp" "src/training/Trainer.h" "src/training/Trainer.cpp" "src/data/ImageDatasetConfig.h" "src/training/metrics.h" "src/models/Classifier.h" "src/training/metrics.cpp" "src/models/Classifier.cpp")
 
 # Ustawienia CXX_STANDARD dla targetu (PO jego utworzeniu)
 if (CMAKE_VERSION VERSION_GREATER 3.12)

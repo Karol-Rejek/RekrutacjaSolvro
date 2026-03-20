@@ -1,51 +1,71 @@
 #pragma once
 #include <torch/torch.h>
-
+#include <filesystem>
+#include <string>
+#include <unordered_map>
+#include <vector>
 #include "ImageDatasetConfig.h"
 #include "ImageTypes.h"
 
-struct ImageSample
-{
-	torch::Tensor image;
-	DrawingType drawingType;
-	CaptureMetod captureMetod;
-	uint32_t sampleIndex;
+namespace fs = std::filesystem;
 
-	std::string filePath;
-	
-	torch::Tensor label() const
-	{
-		return torch::tensor(static_cast<int64_t>(drawingType), torch::dtype(torch::kLong));
-	}
+struct ImageSample 
+{
+    torch::Tensor image;
+
+    DrawingType   drawingType;
+
+    CaptureMethod captureMethod;
+    int64_t       contentClass;
+    std::string   contentName;
+    std::string   filePath;
+    uint32_t      sampleIndex;
+
+    torch::Tensor labelTensor() const 
+    {
+        return torch::tensor(static_cast<int64_t>(drawingType), torch::dtype(torch::kLong));
+    }
 };
 
-struct SourceData
-{
-	DrawingType drawingType;
-	CaptureMetod captureMetod;
+struct SourceMeta 
+{ 
+    DrawingType drawingType; 
+    CaptureMethod captureMethod; 
 };
 
-class ImageDataset : public torch::data::Dataset<ImageDataset, ImageSample>
+class ImageDataset : public torch::data::datasets::Dataset<ImageDataset, ImageSample>
 {
-	//----------Variables----------
-private:
-	SourceData sourceData;
-
-	ImageDatasetConfig config;
-	std::vector<ImageSample> samples;
-
-	//----------Constructors----------
+	//----------VARIABLES----------
 public:
-	explicit ImageDataset(ImageDatasetConfig config);
-
-	//----------Destructors----------
-	~ImageDataset();
-
-	//----------Metods----------
-public:
-	ImageSample get(size_t index) override;
-	torch::optional<size_t> size() const override;
+    using SplitPair = std::pair<ImageDataset, ImageDataset>;
 
 private:
-	void BuildIndex();
+    static const std::unordered_map<std::string, SourceMeta> kSourceDirMap;
+
+    ImageDatasetConfig cfg_;
+    std::vector<ImageSample> samples_;
+    std::vector<std::string> classNames_;
+
+	//----------CONSTRUCTORS----------
+public:
+    explicit ImageDataset(ImageDatasetConfig cfg);
+    ImageDataset(ImageDatasetConfig cfg, std::vector<ImageSample> samples);
+
+    //----------METHODS----------
+public:
+    ImageSample get(size_t index) override;
+    torch::optional<size_t> size() const override;
+
+public:
+    int64_t NumClasses()  const;
+    const std::vector<std::string>& ClassNames()  const;
+    void PrintStats()  const;
+    SplitPair SplitTrainVal(float valRatio = 0.2f, uint32_t seed = 42)   const;
+
+private:
+    void BuildIndex();
+    torch::Tensor LoadImage(const fs::path& path) const;
+    torch::Tensor Normalize(torch::Tensor img) const;
+    torch::Tensor Augment(torch::Tensor img, DrawingType dt) const;
+
 };
