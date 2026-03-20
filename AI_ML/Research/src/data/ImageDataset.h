@@ -4,7 +4,6 @@
 #include "ImageDatasetConfig.h"
 #include "ImageTypes.h"
 
-
 struct ImageSample
 {
 	torch::Tensor image;
